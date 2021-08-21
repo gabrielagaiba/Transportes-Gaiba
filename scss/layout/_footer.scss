@@ -1,0 +1,101 @@
+//footer scss
+@import '../bases/variables';
+footer {
+    #footer-nav {
+        position: relative;
+        bottom: 0;
+        background-color: $color-segundo;
+        height: nth(
+            $height,
+            7
+        );
+        @include flex (space-around);
+        vertical-align:middle;    
+            .footer-ul {
+                padding: 0;
+                margin: 0;
+                display: nth(
+                    $display, 
+                    1
+                );
+                align-items: $align-items;
+            
+                .footer-li {
+                    display:nth(
+                        $display, 
+                        2
+                    );
+                    list-style: none;
+                    padding: nth(
+                        $padding,
+                        1
+                    );
+                }
+                .footer-a {
+                    text-decoration: nth(
+                        $text-decoration,
+                        1
+                    );
+                    color: $color-primero;
+                    font-family: $font;
+                    font-size: nth(
+                        $font-size,
+                        1
+                    );
+                }
+                .footer-logo, .footer-img {
+                    width: nth(
+                        $width,
+                        2
+                    );
+                    height: nth(
+                        $height,
+                        2
+                    );
+                }
+            }    
+    }
+}
+//Tablets
+@media only screen and (min-width:401px) and (max-width:960px) {
+    .footer-logo, .footer-img {    
+        width: nth(
+            $width,
+            3
+        );
+        height: nth(
+            $height,
+            3
+        );
+    }        
+}
+//Desktop
+@media only screen and (min-width:961px) {
+    #footer-nav  {
+        height: nth(
+            $height,
+            7
+        );
+    }
+
+    .footer-li {
+        padding: 0.5em 1em;
+    }
+
+    .footer-a {
+        font-size: nth($font-size,
+        2);
+    }
+
+    .footer-logo, .footer-img {
+        width: nth(
+            $width,
+            5
+        );
+        height: nth(
+            $height,
+            5
+        );
+    }
+}
+

@@ -1,0 +1,13 @@
+//lists scss
+@import '../bases/variables';
+//nosotros.html
+.li-valores {
+    list-style-type:disc;
+}
+//contacto.html
+.li-contacto { 
+    list-style: none;
+    color: $color-segundo;
+    font: $font;
+}
+

@@ -1,0 +1,76 @@
+// Variables
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap');
+$color-primero: #d0d3c5;
+$color-segundo: #032b2f;
+$color-tercero: #08708a;
+$color-cuarto:#d73131;
+$color-quinto: #56b1bf;
+$black: black;
+$margin-body: 2em 7em;
+$margin-div: 3em 1em;
+$margin: 1em 1em;
+$padding:0.5em, 1em;
+$font:'Raleway', sans-serif;
+$font-size-h1: 1.5em, 2em, 3em;
+$font-size-h2: 1.2em, 1.5em, 1.8em;
+$font-size-h3: 1em, 1.2em, 1.5em;
+$font-size: 0.8em, 1em, 1.2em, 2em, 2.5em;
+$text-decoration: none, underline;
+$line-height: 1.2, 1.4, 1.6;
+$text-align: justify, center;
+$align-items: center; 
+$align-content:center;
+$justify-items: center;
+$border-radius: 2px;
+$ancho: 100%;
+$width: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 12em, 14em, 16em, 20em, 24em;
+$height: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 12em, 14em, 16em, 20em, 24em;
+$display: flex, inline-flex, grid, block;
+$buttonindex: (
+    mobiletablet: $color-quinto,
+    desktop: $color-tercero
+);
+@mixin flex ($propiedad) {
+    display: flex; flex-direction: row;
+    justify-content: ($propiedad);
+}
+%input {
+    display: nth($display,
+    4
+    );
+    font-family: $font;
+    font-size: nth(
+        $font-size, 
+        2
+    );
+    border: 1px solid $color-primero;
+    color: $color-segundo;
+    border-radius: $border-radius;
+    margin-bottom: 0.5em;    
+}
+%active-hover {
+    color: $black;
+    transform: scale(1.1);
+}
+%button-form {
+    background-color: $color-segundo;
+    color: $color-primero;
+    font-family: $font;
+}
+%borders {
+    border-top: solid 2px $color-segundo;
+    border-right: solid 1px $color-segundo;
+    border-bottom: solid 2px $color-segundo;
+    border-left: solid 1px $color-segundo;
+}
+%error {
+    width: $ancho;
+    position: relative;
+    top:50%;
+    transform: translateY(50%);
+    text-align: nth(
+        $text-align,
+        2
+    );
+}

@@ -1,0 +1,102 @@
+//grids scss
+@import '../bases/variables';
+// servicios.html
+.div-servicios { 
+    display: nth(
+        $display,
+       3
+    );
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-items: $justify-items;
+}
+//cotizacion.html
+.div-cotizacion { 
+    padding: 2.5em 1em;
+    display: nth(
+        $display,
+       3
+    );
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items:  $justify-items;
+    align-items: $align-items;
+    margin: 0.5em 0.3em;
+}
+//nosotros.html
+.div-nosotros {
+    display: nth(
+        $display,
+       3
+    );
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+//contacto.html
+.div-contacto { 
+    display: nth(
+        $display,
+       3
+    );
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items:  $justify-items;
+    align-items: $align-items;
+    margin: 0.2em 0.2em;
+}
+
+//Tablets
+@media only screen and (min-width:401px) and (max-width:960px) {
+    //servicios.html
+    .div-servicios { 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+//Desktop
+@media only screen and (min-width:961px) {
+    //servicios.html
+    .div-servicios { 
+        grid-template-columns: auto auto;
+        grid-template-rows:3fr;
+        margin-bottom: 2em;
+    }
+    //sucursales.html
+    .div-sucursales { 
+        display:nth(
+           $display,
+           3
+        );
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin: $margin-body;
+        margin-bottom: 2em;
+    }
+    //cotizacion.html    
+    .div-cotizacion {    
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr;        
+        margin: $margin-body;
+        padding: nth(
+            $padding,
+            2
+        );
+    }
+    // nosotros.html
+    .div-nosotros {
+        display: nth(
+            $display,
+           3
+        );
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+     //contacto.html
+     .div-contacto { 
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        margin: $margin-body;
+    }
+
+}

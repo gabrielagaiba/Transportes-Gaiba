@@ -1,0 +1,79 @@
+//imagenes y mapas scss
+@import '../bases/variables';
+//servicios.html
+.imagen-servicios{
+    width: nth(
+        $width,
+        6
+    );
+    height:nth(
+        $height,
+        6    
+    );
+    padding: 0.2em;
+}
+//sucursales.html
+.map {    
+    margin: 2em 0.3em; 
+    box-sizing:border-box;
+    width: nth(
+            $width,
+            14
+        );
+        height: nth(
+            $height,
+            14
+        );
+}
+//contacto.html
+.imagen-contacto {
+    width: nth(
+        $width,
+        1
+    );
+    height:nth(
+        $height,
+        1
+    );
+}
+//Desktop
+@media only screen and (min-width:961px) {
+    //servicio.html
+    .imagen-servicios{
+        width: nth(
+            $width,
+            9
+        );
+        height:nth(
+            $height,
+            9
+        );
+        padding: nth(
+            $padding,
+            2
+        );
+    }
+    //sucursales.html
+    .map {    
+       width: nth(
+            $width,
+            13
+        );
+        height:nth(
+            $height,
+            13
+        );
+    }
+    //contacto.html
+    .imagen-contacto {
+        width: nth(
+            $width,
+            4
+        );
+        height:nth(
+            $height,
+            4
+        );
+    }
+}
+

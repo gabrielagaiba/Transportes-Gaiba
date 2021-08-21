@@ -1,0 +1,18 @@
+//cards scss
+@import '../bases/variables';
+.section-space {
+    box-sizing:border-box;
+    height: nth(
+        $height,
+        12
+    );
+    margin: 0.2em;
+    padding: 0.5em 0.3em;   
+    background-color: $color-primero;    
+    @extend %borders;
+    text-align: nth(
+        $text-align,
+        2
+    );
+
+}

@@ -1,0 +1,5 @@
+//forms scss
+@import '../bases/variables';
+.input-contact {
+    @extend %input;
+}

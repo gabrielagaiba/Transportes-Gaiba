@@ -1,0 +1,91 @@
+//button scss
+@import '../bases/variables';
+#button-land-page {
+    @include flex (space-around);
+    margin: 2.5em 0;    
+
+    .button-index {
+        box-sizing: border-box;
+        width:$ancho - 68%;
+        height: nth(
+            $height,
+            10
+        );
+
+        color: $black;
+        background-color: map-get($buttonindex, mobiletablet);
+        font-family: $font; 
+        border-radius: $border-radius;
+
+        &:active {
+            background-color: $color-cuarto;
+            @extend %active-hover;
+        }
+        .buttons {
+            color: $black;
+            font-size: nth(
+                $font-size,
+                2
+            );
+        }
+        .buttons-img {
+            width: nth(
+                $width,
+                7
+            );
+            height: nth(
+                $height,
+                7
+            );
+        }
+    }
+}  
+.button-form  {
+    @extend %button-form;    
+}
+
+/*Tablets*/
+@media only screen and (min-width:401px) and (max-width:960px) {
+    .button-index {
+        height: nth(
+            $height,
+            11
+        );
+    }      
+}
+
+//Desktop
+@media only screen and (min-width:961px) {
+    #button-land-page {
+        margin: 2em 0;
+    }
+    .button-index {
+        height:nth(
+            $height,
+            12
+        ); 
+        background-color: map-get($buttonindex, desktop);        
+        &:hover {
+            background-color: $color-cuarto;
+            color: $black;
+            transform: scale(1.1);
+        }
+}
+    .buttons {
+        font-size: nth(
+            $font-size,
+            3
+        );
+    }
+    .buttons-img {
+        width: nth(
+            $width,
+            8
+        );
+        height: nth(
+            $height,
+            8
+        );
+    }
+}  
+   

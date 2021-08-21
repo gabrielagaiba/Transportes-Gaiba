@@ -1,0 +1,532 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Variables*/
+:root {
+    --color-primero: #d0d3c5;
+    --color-segundo: #032b2f;
+    --color-tercero: #08708a;
+    --color-cuarto:#d73131;
+    --color-quinto: #56b1bf;
+    --font:'Raleway', sans-serif;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-primero);
+}
+
+/*index CSS*/
+
+/*header css*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+#menu-nav {
+    background-color: var(--color-segundo);
+    align-items: center;
+    padding: 0.1em 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-a {
+    display: inline-flex;
+    flex-basis: auto;
+    align-content: center;
+  
+}
+.menu-logo{
+    padding: 0.2em;
+    width: 2em;
+    height: 2em; 
+}
+
+.menu-h1 {   
+    text-decoration: none;
+    color: var(--color-primero);
+    font-family: var(--font);
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.menu {
+    color: var(--color-primero);
+}
+
+.menu:active {
+    color: var(--color-primero);
+}
+
+/*div mmargin*/
+.margin-div {
+margin: 3em 1em;
+}
+
+/*carousel*/
+#carouselExampleIndicators {
+    z-index: -3;
+    position:relative;
+    top: 0;
+    left: 0; 
+}
+
+/*section 1*/
+#button-land-page {
+    display: flex; flex-direction: row;
+    justify-content: space-around;
+    margin: 2.5em 0;    
+}
+
+.button-index {
+    box-sizing: border-box;
+    width:32%;
+    height: 12em;
+    color: black;
+    background-color: var(--color-tercero);
+    font-family: var(--font);
+    border-radius: 2%;
+}
+
+.button-index:active {
+    background-color: var(--color-cuarto);
+    color: black;
+    transform: scale(1.1);
+}
+
+.buttons {
+    color: black;
+    font-size: 0.9em;
+}
+
+.buttons-img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/*footer*/
+#footer-nav {
+    position: relative;
+    bottom: 0;
+    background-color: var(--color-segundo);
+    height: 3em;
+    display: flex; flex-direction: row; 
+    justify-content: space-around;  
+    vertical-align:middle;
+}
+
+.footer-ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-li {
+    display:inline-flex;
+    list-style: none;
+    padding: 0 0.2em;
+}
+
+.footer-a {
+    text-decoration: none;
+    color: var(--color-primero);
+    font-family: var(--font);
+    font-size: 0.7em;
+}
+
+.footer-logo, .footer-img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/*css h2 todos los archivos*/
+h2 {
+    color: var(--color-segundo);
+    font-family: var(--font);
+    font-size: 1.1em;
+    text-decoration: underline;  
+    padding: 0.5em 0;  
+}
+
+/*css h3 todos los archivos*/
+h3 {
+    color: var(--color-segundo);
+    font-family: var(--font);
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+/* css servicios.html*/
+.servicios {     
+    padding: 0.2em;
+}
+
+.section-space { 
+    box-sizing:border-box;
+    height: 16em;
+    margin: 0.2em;
+    padding: 0.5em 0.3em;   
+    background-color: var(--color-primero);    
+    border-top: solid 2px var(--color-segundo);
+    border-right: solid 1px var(--color-segundo);
+    border-bottom: solid 2px var(--color-segundo);
+    border-left: solid 1px var(--color-segundo);
+    text-align: center;
+}
+    
+.div-servicios { 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+}
+
+.imagen-servicios{
+    width: 2em;
+    height: 2em;
+    padding: 0.2em;
+}
+
+/* p de servicios.html +nosotros.html + cotizacion.html*/
+.parrafo, .parrafo-nosotros, 
+.li-valores, .parrafo-cotizacion {
+    color: var(--color-segundo);
+    font-family: var(--font); 
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+/*CSS sucursales.htm */
+.localidades-list, .sucursales-list { 
+    padding: 1em;
+}
+
+.map {    
+    margin: 2em 0.3em; 
+    box-sizing:border-box;
+    height: 20em;
+    width: 20em;
+ }
+
+/*CSS cotizacion.html*/
+.div-cotizacion { 
+    padding: 2.5em 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0.5em 0.3em;
+}
+
+/*CSS nosotros.html*/
+.div-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.li-valores {
+    list-style-type:disc;
+}
+
+.section-mision, .section-vision, 
+.section-valores, .section-objetivos, .section-historia {     
+    margin: 0.2em;
+    padding: 0.2em 0.5em;
+}
+
+/*css contacto.html*/
+.div-contacto { 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0.2em 0.2em;
+}
+
+.li-contacto { 
+    list-style: none;
+    color:var(--color-segundo);
+    font: var(--font);
+}
+
+.imagen-contacto {
+    width: 0.8em;
+    height: 0.8em;
+}
+
+
+.input-contact {
+    font-family: var(--font);
+    font-size: 1em;
+    display:block;
+    border: 1px solid rgb(206, 193, 193);
+    color: var(--color-segundo);
+    border-radius: 2px;
+    margin-bottom: 0.5em;
+}
+
+.button-form  {
+    background-color: var(--color-segundo);
+    color:var(--color-primero);
+    font-family: var(--font);
+}
+
+/*Tablets*/
+@media only screen and (min-width:401px) and (max-width:960px) {
+    /*Header*/
+    .menu-h1{
+       font-size: 2em;
+    }
+    
+    .menu-a {       
+        font-size: 1.5em;          
+    }
+    
+    .menu-img-logo {
+        padding: 1.5em 0.1em;
+    }
+        
+    .menu-ul {
+        padding: 1em 0.2em;  
+    }
+    /*section1*/
+    .button-index {
+        box-sizing: border-box;
+        width:32%;
+        height: 14em;
+    }
+        
+    button:hover {
+        background-color: var(--color-segundo);
+    }
+    
+    .buttons {
+        font-size: 1.3em;
+    }
+    
+    /*footer*/
+    .footer-logo, .footer-img {    
+        width:1.3em;
+        height:1.3em;
+    }
+    
+    .footer-a {    
+       font-size: 1em;
+    }
+
+    /*CSS servicios*/
+    .section-space { 
+        box-sizing:border-box;
+        height: 24em;
+    }
+
+    .div-servicios { 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    
+    .imagen-servicios{
+        width: 2em;
+        height: 2em;
+        padding: 0.2em;
+    }
+    
+    /* p de servicios.html +nosotros.html + cotizacion.html*/
+    .parrafo, .parrafo-nosotros, 
+    .li-valores, .parrafo-cotizacion {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    /*CSS sucursales.htm */
+    .map {    
+        box-sizing:border-box;
+        height: 24em;
+        width: 24em;
+    }
+  
+}
+
+/*Desktop*/
+@media only screen and (min-width:961px) {
+
+    /*header css*/
+    #menu-nav {
+        background-color: var(--color-segundo);      
+        display: flex; flex-direction: row; 
+        justify-content: space-between;
+        flex-basis: 5em;
+        padding: 0.5em 1em;
+    }
+
+    .menu-logo{
+        width: 2em;
+        height: 2em; 
+    }
+
+    .menu-h1 {
+        display: inline-block;
+        font-size: x-large;
+        margin-bottom: 0;
+    }
+
+    .menu:hover {
+        color: var(--color-primero);
+    }
+
+    /*div margin*/
+    .div-margin {
+    margin: 2em 6em;
+    }
+
+    /*section 1*/
+    #button-land-page {
+        margin: 2em 0;
+    }
+
+    .button-index {
+        height: 18.5em;  
+    }
+
+    .button-index:hover {
+        background-color: var(--color-cuarto);
+        color: black;
+        transform: scale(1.1);
+    }
+
+    .buttons {
+        font-size: x-large;
+    }
+
+    .buttons-img {
+        width: 5em;
+        height: 5em;
+    }
+
+    /*footer*/
+    #footer-nav  {
+        height: 3.5em;
+    }
+
+    .footer-li {
+        padding: 0.5em 1em;
+    }
+
+    .footer-a {
+        font-size: x-small;
+    }
+
+    .footer-logo, .footer-img {
+        width: 1.7em;
+        height: 1.7em;
+    }
+
+    /*css h2 todos los archivos*/
+    h2 {
+        font-size: large;
+    }
+
+    /*css h3 todos los archivos*/
+    h3 {
+        font-size: medium;
+    }
+
+    /* css servicios.html*/
+    .servicios {     
+        padding: 2em;
+    }
+
+    .section-space { 
+        box-sizing:border-box;
+        height: 22em;
+        margin: 1em;
+        padding: 2em 1em;      
+    }
+        
+    .div-servicios { 
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto;
+        margin-bottom: 2em;
+    }
+
+    .imagen-servicios{
+        width: 8em;
+        height: 8em;
+        padding: 1em;
+    }
+
+    /* p de servicios.html +nosotros.html + cotizacion.html*/
+    .parrafo, .parrafo-nosotros, 
+    .li-valores, .parrafo-cotizacion {
+        font-size: medium;
+        line-height: 1.6;
+    }
+
+    /*CSS sucursales.html*/
+    .div-sucursales { 
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin-bottom: 2em;
+    }
+
+    .map {    
+        box-sizing:border-box;
+        height: 28em;
+        width: 28em;
+    }
+         
+    /*CSS cotizacion.html*/      
+    .div-cotizacion {    
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr;        
+        margin: 2em 6em;
+        padding: 1em;
+    }
+
+    /*CSS nosotros.html*/
+    .div-nosotros {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .section-mision, .section-vision, 
+    .section-valores, .section-objetivos, .section-historia {     
+        margin: 1em;
+        padding: 1em;
+    }
+
+    /*css contacto.html*/
+    .div-contacto { 
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        margin: 2em 6em;
+    }
+
+    .imagen-contacto {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .input-contact {
+        font-size: medium;
+        margin-bottom: 1em;
+    }
+}
+
+

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-primero;
+}
+
+.margin-div {
+    margin: $margin-div;
+}
+//error 404
+.error-404 {
+    background-image: linear-gradient(125deg,$color-segundo, $color-quinto)
+}
+//Desktop
+@media only screen and (min-width:961px) {
+    .margin-div{
+        margin: $margin-body;
+    }
+}
