@@ -18,8 +18,7 @@ footer {
                     $display, 
                     1
                 );
-                align-items: $align-items;
-            
+                align-items: $align-items;            
                 .footer-li {
                     display:nth(
                         $display, 

@@ -40,20 +40,20 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu" data-bs-toggle="dropdown" href="nosotros.html" role="button" aria-expanded="false">Nosotros</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="nosotros.html #mision">Misión</a></li>
-                            <li><a class="dropdown-item" href="nosotros.html #vision">Visión</a></li>
-                            <li><a class="dropdown-item" href="nosotros.html #valores">Valores</a></li>
-                            <li><a class="dropdown-item" href="nosotros.html #objetivos">Objetivos del Negocio</a></li>
-                            <li><a class="dropdown-item" href="nosotros.html #historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#mision">Misión</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#vision">Visión</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#valores">Valores</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#objetivos">Objetivos del Negocio</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html#historia">Historia</a></li>
                         </ul>
                         </li>
                 <li class="nav-item dropdown">        
                     <a class="nav-link dropdown-toggle  menu" data-bs-toggle="dropdown" href="servicios.html" role="button" aria-expanded="false">Servicios</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="servicios.html #express">Express 24/48 hs.</a></li>
-                            <li><a class="dropdown-item" href="servicios.html #contrarreembolso">Contrarreembolso</a></li>
-                            <li><a class="dropdown-item" href="servicios.html #cargas-granel">Cargas a Granel</a></li>       
-                            <li><a class="dropdown-item" href="servicios.html #cargas-completas">Cargas Completas</a></li>                
+                            <li><a class="dropdown-item" href="servicios.html#express">Express 24/48 hs.</a></li>
+                            <li><a class="dropdown-item" href="servicios.html#contrarreembolso">Contrarreembolso</a></li>
+                            <li><a class="dropdown-item" href="servicios.html#cargas-granel">Cargas a Granel</a></li>       
+                            <li><a class="dropdown-item" href="servicios.html#cargas-completas">Cargas Completas</a></li>                
                         </ul>
                     </li>
                 <li class="nav-item">
@@ -82,15 +82,25 @@
         <!--Fin section 1-->
         <!--Inicio secction 2-->
         <section class= "form-cotizacion">
-            <form action="#" method="GET">
-                <input class= "input-contact" type="alto" placeholder="Alto (cm)" required="">
-                <input class= "input-contact" type="ancho" placeholder="Ancho (cm)" required="">
-                <input class= "input-contact" type="profundidad" placeholder="Profundidad (cm)" required="">
-                <input class= "input-contact" type="peso" placeholder="Peso (kg) " required="">
-                <input class= "input-contact" type="retirar" placeholder="Retirar en" required="">
-                <input class= "input-contact" type="entregar" placeholder="Entregar en" required=""><input class= "input-contact" type="email" placeholder="E-mail" required="">
-                <input class= "input-contact" type="telefono" placeholder="Teléfono" required="">
-                <button type="button" class="btn button-form">ENVIAR</button>
+            <form method="POST" action="../enviar2.php">
+                <label class= "form-text" for="alto">Alto (cm)</label>
+                <input class= "input-contact" type="number" name="alto" id="alto" placeholder="Centímetros">
+                <label class= "form-text" for="ancho">Ancho (cm)</label>
+                <input class= "input-contact" type="number" name="ancho" id="ancho" placeholder="Centímetros">
+                <label class= "form-text" for="profundidad">Profundidad (cm)</label>
+                <input class= "input-contact" type="number" name="profundidad" id="profundidad" placeholder="Centímetros">
+                <label class= "form-text" for="peso">Peso (kg)</label>
+                <input class= "input-contact" type="number" name="peso" id="peso" placeholder="Kilogramos">
+                <label class= "form-text" for="retirar">Retirar en</label>
+                <input class= "input-contact" type="text" name="retirar" id="retirar"placeholder="Localidad">
+                <label class= "form-text" for="entregar">Entregar en</label>
+                <input class= "input-contact" type="text" name="entregar" id="entregar" placeholder="Localidad">
+                <label class= "form-text" for="email-usuario">E-mail</label>
+                <input class= "input-contact" type="email" name="email" id="email-usuario" placeholder="E-mail">
+                <label class= "form-text" for="telefono-usuario">Teléfono</label>
+                <input class= "input-contact" type="tel" name="telefono" id="telefono-usuario" placeholder="Teléfono">
+                <button type="submit" class="btn button-form">ENVIAR</button>
+            
             </form>          
         </section>
         <!--Fin section 2-->

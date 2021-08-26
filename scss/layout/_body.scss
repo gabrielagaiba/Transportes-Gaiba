@@ -10,6 +10,13 @@ body {
 .margin-div {
     margin: $margin-div;
 }
+
+.sucursales-h {
+    height: nth(
+        $height,
+        16
+    );
+}
 //error 404
 .error-404 {
     background-image: linear-gradient(125deg,$color-segundo, $color-quinto)

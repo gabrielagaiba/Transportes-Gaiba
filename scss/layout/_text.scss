@@ -30,6 +30,12 @@ h3 {
         2
     );  
 }
+a {
+    text-decoration: nth(
+        $text-decoration,
+        1
+    );  
+}
 // p de servicios.html +nosotros.html + cotizacion.html
 .parrafo, .parrafo-nosotros, 
 .li-valores, .parrafo-cotizacion {

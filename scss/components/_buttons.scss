@@ -11,37 +11,40 @@
             $height,
             10
         );
-
         color: $black;
         background-color: map-get($buttonindex, mobiletablet);
         font-family: $font; 
         border-radius: $border-radius;
-
         &:active {
             background-color: $color-cuarto;
             @extend %active-hover;
         }
-        .buttons {
-            color: $black;
-            font-size: nth(
-                $font-size,
-                2
-            );
-        }
-        .buttons-img {
-            width: nth(
-                $width,
-                7
-            );
-            height: nth(
-                $height,
-                7
-            );
-        }
     }
+    .buttons {
+        color: $black;
+        font-size: nth(
+            $font-size,
+            2
+        );
+    }
+    .buttons-img {
+
+        width: nth(
+            $width,
+            7
+        );
+        height: nth(
+            $height,
+            7
+        );
+    }
+    
 }  
 .button-form  {
-    @extend %button-form;    
+    @extend %button-form;
+    &:active {
+        @extend %active-hover;
+    }    
 }
 
 /*Tablets*/
@@ -65,12 +68,11 @@
             12
         ); 
         background-color: map-get($buttonindex, desktop);        
-        &:hover {
+        &:hover {            
             background-color: $color-cuarto;
-            color: $black;
             transform: scale(1.1);
         }
-}
+    }
     .buttons {
         font-size: nth(
             $font-size,
@@ -86,6 +88,11 @@
             $height,
             8
         );
+    }
+    .button-form  {
+        &:hover {
+            transform: scale(1.1);
+        }    
     }
 }  
    

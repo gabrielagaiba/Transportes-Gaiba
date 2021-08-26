@@ -4,15 +4,35 @@
     box-sizing:border-box;
     height: nth(
         $height,
-        12
+        13
     );
     margin: 0.2em;
-    padding: 0.5em 0.3em;   
+    padding: nth(
+        $padding, 
+        1     
+    );     
     background-color: $color-primero;    
     @extend %borders;
     text-align: nth(
         $text-align,
         2
     );
-
+}
+//Tablet
+@media only screen and (min-width:401px) and (max-width:960px) {
+    .section-space {
+        height: nth(
+            $height,
+            15
+        );
+    }
+}
+//Desktop
+@media only screen and (min-width:961px) {
+    .section-space {
+        height: nth(
+            $height,
+            14
+        );
+    }
 }
