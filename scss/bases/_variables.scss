@@ -7,7 +7,7 @@ $color-quinto: #56b1bf;
 $black: black;
 $margin-body: 2em 7em;
 $margin-div: 3em 1em;
-$margin: 0.5em, 1em;
+$margin: 0.5em, 1em, auto;
 $padding:0.5em, 1em, 2.5em 1em;
 $font:'Raleway', sans-serif;
 $font-size-h1: 1.5em, 2em, 3em;
@@ -24,7 +24,7 @@ $border-radius: 2px;
 $ancho: 100%;
 $width: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 12em, 14em, 16em, 20em, 24em;
 $height: 0.8em, 1.2em, 1.3em, 1.5em, 1.7em, 2em, 2.5em, 5em, 8em, 12em, 14em, 16em, 20em, 24em, 25em, 30em;
-$display: flex, inline-flex, grid, block;
+$display: flex, inline-flex, grid, block, none;
 $buttonindex: (
     mobiletablet: $color-tercero,
     desktop: $color-quinto,
@@ -61,13 +61,4 @@ $buttonindex: (
     border-bottom: solid 2px $color-segundo;
     border-left: solid 1px $color-segundo;
 }
-%error {
-    width: $ancho;
-    position: relative;
-    top:50%;
-    transform: translateY(50%);
-    text-align: nth(
-        $text-align,
-        2
-    );
-}
+

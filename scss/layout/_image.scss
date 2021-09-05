@@ -4,14 +4,49 @@
 .imagen-servicios{
     width: nth(
         $width,
-        6
+        8
     );
     height:nth(
         $height,
-        6    
+        8   
     );
     padding: 0.2em;
+    margin: nth(
+            $margin,
+            3
+        );        
+    }
+
+.section-space {    
+    .monocromatic {
+        display: nth(
+            $display,
+            4
+        );        
+    }
+    .color {
+        display: nth(
+            $display,
+            5
+        );
+    }
 }
+
+.section-space:hover { 
+    .monocromatic {
+        display: nth(
+            $display,
+            5
+        );
+    }
+    .color {
+        display: nth(
+            $display,
+            4
+        );
+    }
+}
+
 //sucursales.html
 .map {    
     margin: 2em 0.3em; 
@@ -35,6 +70,21 @@
         $height,
         1
     );
+}
+
+//Tablet
+@media only screen and (min-width:401px) and (max-width:960px) {
+    //servicio.html
+    .imagen-servicios{
+        width: nth(
+            $width,
+            8
+        );
+        height:nth(
+            $height,
+            8
+        );       
+    }
 }
 //Desktop
 @media only screen and (min-width:961px) {
@@ -76,4 +126,3 @@
         );
     }
 }
-

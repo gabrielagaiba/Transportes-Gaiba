@@ -1,62 +1,71 @@
 //footer scss
 @import '../bases/variables';
-footer {
-    #footer-nav {
-        position: relative;
-        bottom: 0;
-        background-color: $color-segundo;
-        height: nth(
-            $height,
-            7
-        );
-        @include flex (space-around);
-        vertical-align:middle;    
-            .footer-ul {
-                padding: 0;
-                margin: 0;
-                display: nth(
-                    $display, 
-                    1
-                );
-                align-items: $align-items;            
-                .footer-li {
-                    display:nth(
-                        $display, 
-                        2
-                    );
-                    list-style: none;
-                    padding: nth(
-                        $padding,
-                        1
-                    );
-                }
-                .footer-a {
-                    text-decoration: nth(
-                        $text-decoration,
-                        1
-                    );
-                    color: $color-primero;
-                    font-family: $font;
-                    font-size: nth(
-                        $font-size,
-                        1
-                    );
-                }
-                .footer-logo, .footer-img {
-                    width: nth(
-                        $width,
-                        2
-                    );
-                    height: nth(
-                        $height,
-                        2
-                    );
-                }
-            }    
-    }
+.footer-menu {   
+    position: relative;
+    bottom: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+    background-color: $color-segundo;
+    height: nth(
+        $height,
+        16
+    );
+    display: nth(
+        $display,
+       3
+    );
 }
+
+.footer-ul {              
+    list-style: none;
+}
+
+#footer-titulo {
+    text-decoration: nth(
+        $text-decoration,
+        2
+    );
+    color: $color-primero;
+    font-family: $font;
+    font-size: nth(
+        $font-size,
+        2
+    );            
+}
+
+.footer-a {
+    text-decoration: nth(
+        $text-decoration,
+        1
+    );
+    color: $color-primero;
+    font-family: $font;
+    font-size: nth(
+        $font-size,
+        1
+    );      
+}
+
+.footer-a:hover {
+    color: $color-primero;
+}
+
+.footer-logo, .footer-img {
+    width: nth(
+        $width,
+        2
+    );
+    height: nth(
+        $height,
+        2
+    );
+    margin-right: 10px;
+}
+
 //Tablets
 @media only screen and (min-width:401px) and (max-width:960px) {
+    
     .footer-logo, .footer-img {    
         width: nth(
             $width,
@@ -68,33 +77,31 @@ footer {
         );
     }        
 }
+
 //Desktop
 @media only screen and (min-width:961px) {
-    #footer-nav  {
+
+    .footer-menu  {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        align-content: center;
+        margin: auto;
         height: nth(
             $height,
-            7
+            10
         );
     }
-
-    .footer-li {
-        padding: 0.5em 1em;
-    }
-
-    .footer-a {
-        font-size: nth($font-size,
-        2);
-    }
-
+    
     .footer-logo, .footer-img {
         width: nth(
             $width,
-            5
+            4
         );
         height: nth(
             $height,
-            5
+            4
         );
     }
+    
 }
 

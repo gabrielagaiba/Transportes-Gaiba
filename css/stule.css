@@ -287,10 +287,6 @@ body {
   font-size: 0.7em;
 }
 
-.footer-a:hover {
-  color: #d0d3c5;
-}
-
 .footer-logo, .footer-img {
   width: 1.2em;
   height: 1.2em;
@@ -299,22 +295,27 @@ body {
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .footer-logo, .footer-img {
-    width: 1.3em;
-    height: 1.3em;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 @media only screen and (min-width: 961px) {
   .footer-menu {
-    grid-template-columns: auto auto auto auto;
+    /*grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    align-content: center;
+    align-content: center;*/
     margin: auto;
-    height: 12em;
+    height: 14em;
+  }
+
+  .footer-a {
+    font-size: 1.2em;
   }
 
   .footer-logo, .footer-img {
-    width: 1.5em;
-    height: 1.5em;
+    width: 5em;
+    height: 5em;
+    margin-right: 10px;
   }
 }
 .input-contact {
@@ -691,4 +692,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stule.css.map */

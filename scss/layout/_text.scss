@@ -17,8 +17,8 @@ h2 {
         1
     );  
 }
-//css h3 todos los archivos
-h3 {
+//css .h3 todos los archivos
+.h3 {
     color: $color-segundo;
     font-family: $font;
     font-size: nth(
@@ -48,28 +48,6 @@ a {
     text-align: $text-align;
     line-height: $line-height;
 }
-//parrafo de 404.html
-.parrafo-error {
-    color: $color-primero;
-    font-family: $font;
-    font-size: nth(
-        $font-size,
-        3
-    );
-}
-.parrafo-error-404 {
-    color: $color-primero;
-    font-family: 'Russo One', sans-serif;
-    font-size: nth(
-        $font-size,
-        4
-    );
-    letter-spacing: nth(
-        $font-size,
-        1
-    ); 
-}
-
 //Desktop
 @media only screen and (min-width:961px) {
     h2 {
@@ -79,7 +57,7 @@ a {
     );
     }
     //css h3 todos los archivos
-    h3 {
+    .h3 {
         font-size:  nth(
             $font-size-h3,
             3
@@ -95,18 +73,6 @@ a {
         line-height: nth(
             $line-height, 
         3
-        );
-    }
-    .parrafo-error {
-        font-size: nth(
-            $font-size,
-            4
-        );
-    }
-    .parrafo-error-404 {
-        font-size: nth(
-            $font-size,
-            5
         );
     }
 }
