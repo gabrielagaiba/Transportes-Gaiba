@@ -92,6 +92,19 @@
         );
     }
     
+    .footer-a {
+        text-decoration: nth(
+            $text-decoration,
+            1
+        );
+        color: $color-primero;
+        font-family: $font;
+        font-size: nth(
+            $font-size,
+            1
+        );      
+    }
+    
     .footer-logo, .footer-img {
         width: nth(
             $width,

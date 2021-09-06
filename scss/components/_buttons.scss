@@ -12,7 +12,7 @@
             10
         );
         color: $black;
-        background-color: map-get($buttonindex, mobiletablet);
+        background-color: $color-quinto;
         font-family: $font; 
         border-radius: $border-radius;
         &:active {
@@ -28,7 +28,6 @@
         );
     }
     .buttons-img {
-
         width: nth(
             $width,
             7
@@ -67,7 +66,7 @@
             $height,
             12
         ); 
-        background-color: map-get($buttonindex, desktop);        
+        background-color: $color-quinto;        
         &:hover {            
             background-color: $color-cuarto;
             transform: scale(1.1);
