@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap");
 .input-contact {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -68,6 +67,11 @@
   background-color: #56b1bf;
   font-family: "Raleway", sans-serif;
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 #button-land-page .button-index:active {
   background-color: #d73131;
@@ -273,7 +277,7 @@ body {
   list-style: none;
 }
 
-#footer-titulo {
+.footer-titulo {
   text-decoration: underline;
   color: #d0d3c5;
   font-family: "Raleway", sans-serif;

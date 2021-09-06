@@ -29,10 +29,19 @@ $buttonindex: (
     mobiletablet: $color-tercero,
     desktop: $color-quinto,
 );
+
 @mixin flex ($propiedad) {
     display: flex; flex-direction: row;
     justify-content: ($propiedad);
 }
+
+@mixin flex-buttons ($propiedad) {
+    display: flex; flex-direction: column;
+    justify-content: ($propiedad);
+    align-content: center;
+    align-items: center;
+}
+
 %input {
     display: nth($display,
     4
@@ -47,14 +56,17 @@ $buttonindex: (
     border-radius: $border-radius;
     margin-bottom: 0.5em;    
 }
+
 %active-hover {
     transform: scale(1.1);
 }
+
 %button-form {
     background-color: $color-segundo;
     color: $color-primero;
     font-family: $font;
-    }
+}
+
 %borders {
     border-top: solid 2px $color-segundo;
     border-right: solid 1px $color-segundo;

@@ -15,6 +15,7 @@
         background-color: $color-quinto;
         font-family: $font; 
         border-radius: $border-radius;
+        @include flex-buttons(center);
         &:active {
             background-color: $color-cuarto;
             @extend %active-hover;
