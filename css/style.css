@@ -291,6 +291,10 @@ body {
   font-size: 0.8em;
 }
 
+.footer-titulo:hover {
+  color: #d0d3c5;
+}
+
 .footer-a:hover {
   color: #d0d3c5;
 }
