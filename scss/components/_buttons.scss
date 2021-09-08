@@ -11,15 +11,15 @@
             $height,
             10
         );
-        color: $black;
+        @extend %borders;        
         background-color: $color-quinto;
         font-family: $font; 
-        border-radius: $border-radius;
         @include flex-buttons(center);
         &:active {
             background-color: $color-cuarto;
             @extend %active-hover;
         }
+        
     }
     .buttons {
         color: $black;
