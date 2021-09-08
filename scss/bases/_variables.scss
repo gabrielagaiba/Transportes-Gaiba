@@ -40,6 +40,10 @@ $buttonindex: (
     justify-content: ($propiedad);
     align-content: center;
     align-items: center;
+    text-align: nth(
+        $text-align,
+        2
+    );    
 }
 
 %input {

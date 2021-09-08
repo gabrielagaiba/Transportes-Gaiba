@@ -70,6 +70,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-align: center;
 }
 #button-land-page .button-index:active {
   background-color: #d73131;

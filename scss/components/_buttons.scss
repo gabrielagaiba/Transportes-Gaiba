@@ -18,8 +18,7 @@
         &:active {
             background-color: $color-cuarto;
             @extend %active-hover;
-        }
-        
+        }        
     }
     .buttons {
         color: $black;
@@ -27,6 +26,7 @@
             $font-size,
             2
         );
+        
     }
     .buttons-img {
         width: nth(
